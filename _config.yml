@@ -1,105 +1,45 @@
-# Site settings
-title: 曦秋的小屋
-SEOTitle: 曦秋的小屋 | DanLiu Blog
-header-img: img/home-bg.jpg
-email: liu_chengjia@qq.com
-description: ""
-keyword: "LCJ, Danliu,曦秋的小屋,曦秋,暮夏曦秋, danliu, @曦秋, @曦秋的小屋, 博客, 个人网站"
-url: "acmeliu.ml"              # your host, for absolute URL
-baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+title: Link #博客标题
+description: Just 4 Fun. #博客描述
+keywords: blog,css,html,php #博客关键字
+author: "Link"
 
+#title hide and show
+hide: (つェ⊂)我藏好啦
+show: ´∇｀ 呀被发现啦~ 
 
+baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "hydrogen.atlinker.cn" # change this to the base hostname & protocol for your site
+buildtime: "1514736000" #博客建立时的时间戳 可进入https://tool.lu/timestamp/将博客建立时的日期转换成时间戳
+           #The timestamp at the time of blog establishment can be entered at https://tool.lu/timestamp/to convert the date at the time of blog establishment into a timestamp.
 
-# SNS settings
-RSS: true
-#weibo_username:     DanLCJ
-#zhihu_username:     huxpro
-github_username:    DanLCJ
-#twitter_username:  huxpro
-facebook_username:  chengjia.liu.66
+PJAX: true #启用PJAX，会与评论系统冲突（如不用评论系统建议开启）
 
+paginate: 8 #同时显示的最大文章数，超过自动分页
+paginate_path: "page:num"
 
+background: https://api.dujin.org/bing/1920.php
+theme_color: 546E7A
 
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-timezone: CN 
+# hydrogen-blog date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+hydrogen-blog:
+  date_format: "%b %-d, %Y"
 
+#MathJax switch
+MathJax: false
 
+#install emoji
+plugins:
+  - jemoji
 
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
-
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-
-
-
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
-
-# Duoshuo settings
-#duoshuo_username: huxblog
-# Share component is depend on Comment so we can NOT use share only.
-#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-
-
-
-# Analytics settings
-# Baidu Analytics
-#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-# Google Analytics
-#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-#ga_domain: huangxuan.me
-
-
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: “人生是一场蛹化蝶，<br>磨砺后将是自由的拥抱蓝天。"<br>当然，在那一天到来之前我们都不应该放弃，<br>要对生活充满希望，对自己充满自信。"<br>晚安，比心。🤞"
-sidebar-avatar: /img/A.png       # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: false
-
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-
-# Friends
-friends: [
-    {
-        title: "DuDu",
-	    href: "https://github.com/LukeJYK"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
-]
+# social account
+image:
+twitter:
+  username:
+#  site:
+facebook:
+  #publisher: null
+  #profile_id: null
+  app_id: null
+  #authors: null
+#  admins:
