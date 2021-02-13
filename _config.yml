@@ -29,8 +29,8 @@ hydrogen-blog:
 MathJax: false
 
 #install emoji
-plugins:
-  - jemoji
+#plugins:
+#  - jemoji
 
 # social account
 image:
@@ -44,5 +44,3 @@ facebook:
   #authors: null
 #  admins:
 
-gems:
-  -jemoji
